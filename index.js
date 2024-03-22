@@ -90,3 +90,11 @@ resetBtn.onclick = function(){
 
 let randomNum = Math.floor(Math.random() * 6)
  console.log(randomNum)
+
+ let age2 = 25
+
+ if (age >= 13){
+    console.log("You are old enough to enter the site")
+ }else{
+    console.log("You must be 18+ to enter this site")
+ }
