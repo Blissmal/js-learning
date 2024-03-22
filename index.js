@@ -188,4 +188,6 @@ let phoneNumber = "123-456-8975"
 phoneNumber = phoneNumber.replaceAll("-", "/")
 console.log(phoneNumber)
 
-
+const MyName = "Bethuel Maluti"
+let FirstName = MyName.slice(0, 7)
+console.log(FirstName)
