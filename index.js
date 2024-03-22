@@ -139,3 +139,6 @@ mySubmit.onclick = function(){
 // let age4 = 21
 // let message = age4 >= 18 ? "You are an adult" : "You are a minor"
 // console.log(message)
+let purchase = 125
+let discount = purchase >= 100 ? 10:0
+console.log(`Your total is ${purchase - purchase * (discount/100)}`)
