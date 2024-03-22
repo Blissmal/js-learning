@@ -292,3 +292,13 @@ function sum(...numbers){
 
 const total = sum(1, 3, 5, 6, 7)
 console.log(`Your total is ${total}`)
+
+function average(...numbers){
+    let result = 0
+    for(let number of numbers){
+        result += number
+    }
+    return result / numbers.length
+}
+
+console.log(`Your average is ${average(4,4,4,4)}`)
