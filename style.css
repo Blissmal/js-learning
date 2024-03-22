@@ -107,3 +107,11 @@ button:active{
     text-align: center;
     font-weight: bold;
 }
+
+#diceResult{
+    margin: 25px;
+}
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+}
