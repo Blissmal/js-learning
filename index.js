@@ -256,4 +256,13 @@ function convert(){
     }
 }
 
+let fruits = ["orange", "apple", "banana"]
+console.log(fruits)
+
+let numOfFruits = fruits.length
+console.log(numOfFruits)
+
+for(i = 0;i < fruits.length;i++){
+    console.log(fruits[i])
+}
 
