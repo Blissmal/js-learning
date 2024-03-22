@@ -172,3 +172,20 @@ switch (day) {
         break
 
 }
+
+let userName = "Blissmal"
+
+console.log(userName.charAt(2))
+console.log(userName.indexOf("m"))
+
+userName = userName.trim()
+userName = userName.toLocaleUpperCase()
+
+console.log(userName)
+
+let phoneNumber = "123-456-8975"
+
+phoneNumber = phoneNumber.replaceAll("-", "/")
+console.log(phoneNumber)
+
+
