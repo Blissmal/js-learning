@@ -59,13 +59,23 @@ label{
 
 button{
     margin-top: 15px;
-    background-color: red;
+    background-color: hsl(0, 100%, 60%);
     font-size: 1.5em;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     color: white;
+}
+
+button:hover{
+    background-color: hsl(0, 100%, 50%);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+    
 }
 
 
