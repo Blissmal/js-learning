@@ -131,5 +131,8 @@ mySubmit.onclick = function(){
         paymentResult.textContent = `You are paying with Mastercard`
     }else if(paypalBtn.checked){
         paymentResult.textContent = `You are paying with paypal`
+    }else{
+        paymentResult.textContent = `You must select a payment method`
     }
 }
+
