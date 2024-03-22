@@ -206,20 +206,31 @@ let email = "malutibethuel@gmail.com"
 let Username = email.slice(0, email.indexOf("@"))
 console.log(Username)
 
-let loggedIn = true
-let UserName
-let password
+// let loggedIn = true
+// let UserName
+// let password
 
-do{
-    UserName = window.prompt("Enter your username")
-    password = window.prompt("Enter your password")
+// do{
+//     UserName = window.prompt("Enter your username")
+//     password = window.prompt("Enter your password")
 
-    if(UserName === "myUsername" && password === "myPassword"){
-        loggedIn = true
-        console.log("You are logged in")
-    }else {
-        console.log("Invalid credentials")
+//     if(UserName === "myUsername" && password === "myPassword"){
+//         loggedIn = true
+//         console.log("You are logged in")
+//     }else {
+//         console.log("Invalid credentials")
+//     }
+// }while(!loggedIn)
+
+for(let i = 0;i < 100;i++){
+    if(i%2 == 1){
+        console.log(i)
     }
-}while(!loggedIn)
+}
 
+function add(x, y){
+    let result = x + y
+    return result
+}
 
+console.log(add(4,6))
