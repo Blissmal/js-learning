@@ -268,3 +268,16 @@ for(i = 0;i < fruits.length;i++){
     console.log(fruits[i])
 }
 
+let numbers = [1,2,3,4,5]
+let maximum = Math.max(...numbers)
+
+console.log(maximum)
+
+function openFridge(...foods){
+    console.log(foods)
+}
+
+const food1 = "pizza"
+const food2 = "hamburger"
+
+openFridge(food1, food2)
