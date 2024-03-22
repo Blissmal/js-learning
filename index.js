@@ -321,7 +321,10 @@ function rollDice(){
     for (let i = 0; i < numOfDice; i++){
         const value = Math.floor(Math.random() * 6) + 1
         values.push(value)
-        images.push(`<img src="dice_images">`)
+        images.push(`<img src="dice_images/${value}.svg" alt="Dice ${value}">`)
     }
+
+    diceResult.textContent = `dice: ${values.join(', ')}`
+    diceImages.innerHTML = images.join('')
 
 }
