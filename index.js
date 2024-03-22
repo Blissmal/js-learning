@@ -302,3 +302,10 @@ function average(...numbers){
 }
 
 console.log(`Your average is ${average(4,4,4,4)}`)
+
+function combineString(...strings){
+    return strings.join(" ")
+}
+
+const Name = combineString("Blissmal", "Dangerous", "Hacker")
+console.log(Name)
