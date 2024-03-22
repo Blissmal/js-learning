@@ -116,12 +116,20 @@ const visaBtn = document.getElementById("visaBtn")
 const mastercardBtn = document.getElementById("masterCardBtn")
 const paypalBtn = document.getElementById("paypalBtn")
 const mySubmit = document.getElementById("mySubmit2")
-const subResult = document.getElementById("paymentResult")
+const subResult = document.getElementById("subResult")
+const paymentResult = document.getElementById("paymentResult")
 
 mySubmit.onclick = function(){
     if(myCheckBox.checked){
         subResult.textContent = `You are subscribed`
     }else{
         subResult.textContent = `You are not subscribed`
+    }
+    if(visaBtn.checked){
+        paymentResult.textContent = `You are paying with visa`
+    }else if(mastercardBtn.checked){
+        paymentResult.textContent = `You are paying with Mastercard`
+    }else if(paypalBtn.checked){
+        paymentResult.textContent = `You are paying with paypal`
     }
 }
