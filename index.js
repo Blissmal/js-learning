@@ -235,4 +235,13 @@ function add(x, y){
 
 console.log(add(4,6))
 
+const textBox = document.getElementById("textbox")
+const toFahrenheit = document.getElementById("toFahrenheit")
+const toCelsius = document.getElementById("toCelsius")
+
+
+function convert(){
+
+}
+
 
