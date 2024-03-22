@@ -26,3 +26,6 @@ body{
 .buttons:hover{
     background-color: blue;
 }
+#mySubmit2{
+    font-size: 1em;
+}

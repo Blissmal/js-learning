@@ -93,8 +93,35 @@ let randomNum = Math.floor(Math.random() * 6)
 
  let age2 = 25
 
- if (age >= 13){
-    console.log("You are old enough to enter the site")
- }else{
-    console.log("You must be 18+ to enter this site")
- }
+//  if (age >= 13){
+//     console.log("You are old enough to enter the site")
+//  }else{
+//     console.log("You must be 18+ to enter this site")
+//  }
+let hasLicense = false
+
+// if (age >= 16){
+//     console.log("You are old enough to drive")
+//     if (hasLicense) {
+//         console.log("You have your license")
+//     }else {
+//         console.log("You dont have a license")
+//     }
+// }else {
+//     console.log("You must be 18+ to get a license")
+// }
+
+const myCheckBox = document.getElementById("myCheckBox")
+const visaBtn = document.getElementById("visaBtn")
+const mastercardBtn = document.getElementById("masterCardBtn")
+const paypalBtn = document.getElementById("paypalBtn")
+const mySubmit = document.getElementById("mySubmit2")
+const subResult = document.getElementById("paymentResult")
+
+mySubmit.onclick = function(){
+    if(myCheckBox.checked){
+        subResult.textContent = `You are subscribed`
+    }else{
+        subResult.textContent = `You are not subscribed`
+    }
+}
