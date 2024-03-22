@@ -190,4 +190,6 @@ console.log(phoneNumber)
 
 const MyName = "Bethuel Maluti"
 let FirstName = MyName.slice(0, 7)
+let LastName = MyName.slice(8, 14)
 console.log(FirstName)
+console.log(LastName)
