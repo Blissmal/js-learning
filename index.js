@@ -274,10 +274,21 @@ let maximum = Math.max(...numbers)
 console.log(maximum)
 
 function openFridge(...foods){
-    console.log(foods)
+    console.log(...foods)
 }
 
 const food1 = "pizza"
 const food2 = "hamburger"
 
 openFridge(food1, food2)
+
+function sum(...numbers){
+    let result = 0
+    for(let number of numbers){
+        result += number
+    }
+    return result
+}
+
+const total = sum(1, 3, 5, 6, 7)
+console.log(`Your total is ${total}`)
