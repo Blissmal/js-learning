@@ -44,7 +44,7 @@ let students = 30
 // console.log(username)
 let username
 
-document.getElementById("mySubmit").onclick = function(){
+document.getElementById("mySubmit").onclick = function () {
     username = document.getElementById("text").value
     username = String(username)
     document.getElementById("myH1").textContent = `Hello ${username}`
@@ -59,7 +59,7 @@ const PI = 3.142
 let radius
 let circumference
 
-document.getElementById("mySubmit1").onclick = function(){
+document.getElementById("mySubmit1").onclick = function () {
     radius = document.getElementById("radius").value
     radius = Number(radius)
     circumference = 2 * PI * radius
@@ -73,25 +73,25 @@ const countLabel = document.getElementById("countLabel")
 
 let count = 0
 
-increaseBtn.onclick = function(){
+increaseBtn.onclick = function () {
     count++
     countLabel.textContent = count
 }
 
-decreaseBtn.onclick = function(){
+decreaseBtn.onclick = function () {
     count--
     countLabel.textContent = count
 }
 
-resetBtn.onclick = function(){
+resetBtn.onclick = function () {
     count = 0
     countLabel.textContent = count
 }
 
 let randomNum = Math.floor(Math.random() * 6)
- console.log(randomNum)
+console.log(randomNum)
 
- let age2 = 25
+let age2 = 25
 
 //  if (age >= 13){
 //     console.log("You are old enough to enter the site")
@@ -119,19 +119,19 @@ const mySubmit = document.getElementById("mySubmit2")
 const subResult = document.getElementById("subResult")
 const paymentResult = document.getElementById("paymentResult")
 
-mySubmit.onclick = function(){
-    if(myCheckBox.checked){
+mySubmit.onclick = function () {
+    if (myCheckBox.checked) {
         subResult.textContent = `You are subscribed`
-    }else{
+    } else {
         subResult.textContent = `You are not subscribed`
     }
-    if(visaBtn.checked){
+    if (visaBtn.checked) {
         paymentResult.textContent = `You are paying with visa`
-    }else if(mastercardBtn.checked){
+    } else if (mastercardBtn.checked) {
         paymentResult.textContent = `You are paying with Mastercard`
-    }else if(paypalBtn.checked){
+    } else if (paypalBtn.checked) {
         paymentResult.textContent = `You are paying with paypal`
-    }else{
+    } else {
         paymentResult.textContent = `You must select a payment method`
     }
 }
@@ -140,5 +140,35 @@ mySubmit.onclick = function(){
 // let message = age4 >= 18 ? "You are an adult" : "You are a minor"
 // console.log(message)
 let purchase = 125
-let discount = purchase >= 100 ? 10:0
-console.log(`Your total is ${purchase - purchase * (discount/100)}`)
+let discount = purchase >= 100 ? 10 : 0
+console.log(`Your total is ${purchase - purchase * (discount / 100)}`)
+
+let day = 2
+
+switch (day) {
+    case 1:
+        console.log("Its Sunday")
+        break
+    case 2:
+        console.log("Its Monday")
+        break
+    case 3:
+        console.log("Its Tuesday")
+        break
+    case 4:
+        console.log("Its Wednesday")
+        break
+    case 5:
+        console.log("Its THursday")
+        break
+    case 6:
+        console.log("Its Friday")
+        break
+    case 7:
+        console.log("Its Saturday")
+        break
+    default:
+        console.log(`${day} is not a day`)
+        break
+
+}
