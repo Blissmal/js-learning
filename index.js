@@ -193,3 +193,15 @@ let FirstName = MyName.slice(0, 7)
 let LastName = MyName.slice(8, 14)
 console.log(FirstName)
 console.log(LastName)
+
+
+let firstName = MyName.slice(0, MyName.indexOf(" "))
+let lastName = MyName.slice(MyName.indexOf(" ") + 1)
+console.log(firstName)
+console.log(lastName)
+
+
+let email = "malutibethuel@gmail.com"
+
+let Username = email.slice(0, email.indexOf("@"))
+console.log(Username)
