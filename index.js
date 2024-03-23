@@ -486,8 +486,7 @@ class User{
 }
 const user1 = new User("Blissmal")
 console.log(user1.username)
-console.log(User.userCount)
 
 const user2 = new User("Bethuel")
 console.log(user2.username)
-console.log(User.userCount)
+console.log(`Total Number of users: ${User.userCount}`)
