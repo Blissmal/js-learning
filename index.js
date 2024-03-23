@@ -575,3 +575,12 @@ let b = 2;
 
 console.log(a)
 console.log(b)
+
+const Fruits = [
+    {name: "apple", color: "red", calories: 95},
+    {name: "orange", color: "orange", calories: 45},
+    {name: "banana", color: "yellow", calories: 105}
+];
+
+console.log(Fruits[2].name)
+
