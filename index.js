@@ -558,8 +558,12 @@ class Rectangle {
     get height() {
         return this._height
     }
+    get area(){
+        return this._height * this._width
+    }
 }
 
 const rectangle = new Rectangle(4, 5)
-console.log(rectangle.width)
-console.log(rectangle.height)
+console.log(`${rectangle.width} cm`)
+console.log(`${rectangle.height} cm`)
+console.log(`Area: ${rectangle.area} cm`)
