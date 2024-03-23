@@ -130,5 +130,7 @@ button:active{
     font-size: 6.5rem;
     font-weight: bold;
     text-align: center;
+    width: 100%;
+    color: white;
 
 }
