@@ -531,3 +531,35 @@ hawk.eat()
 hawk.sleep()
 
 
+class Rectangle{
+    constructor(width, height){
+        this.width = width
+        this.height = height
+    }
+    set width(newWidth){
+       if (newWidth > 0){
+        this._width = newWidth
+       }else{
+        console.error("Width must be apositive number")
+       }
+    }
+
+    set height(newHeight){
+        if (newHeight > 0){
+         this._height = newHeight
+        }else{
+         console.error("height must be apositive number")
+        }
+     }
+
+     get width(){
+        return this._width
+     }
+     get height(){
+        return this._height
+     }
+}
+
+const rectangle = new Rectangle(4, 5)
+console.log(rectangle.width)
+console.log(rectangle.height)
