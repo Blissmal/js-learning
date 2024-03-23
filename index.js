@@ -405,4 +405,4 @@ const person = {
     }
 }
 
-console.log(person.sayHello())
+person.sayHello()
