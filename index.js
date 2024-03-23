@@ -473,6 +473,6 @@ class MathUtil{
 }
 
 console.log(MathUtil.PI)
-console.log(`The diameter is ${MathUtil.getDiameter(10)}`)
+console.log(`Diameter: ${MathUtil.getDiameter(10)}`)
 console.log(`The circumference is ${MathUtil.getCircumference(7)}`)
 
