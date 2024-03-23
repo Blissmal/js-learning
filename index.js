@@ -600,3 +600,21 @@ function outer(){
     inner()
 }
 outer()
+
+function createCounter(){
+    let count = 0
+    function increament(){
+        count++
+        console.log(`Count increased to ${count}`)
+    }
+
+    function getCount(){
+        return count
+    }
+    return {increament, getCount}
+}
+
+const counter = createCounter()
+counter.increament()
+
+console.log(`The current count is ${counter.getCount()}`)
