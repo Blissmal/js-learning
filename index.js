@@ -490,3 +490,44 @@ console.log(user1.username)
 const user2 = new User("Bethuel")
 console.log(user2.username)
 console.log(`Total Number of users: ${User.userCount}`)
+
+class Animal{
+    alive = true
+    eat(){
+        console.log(`This ${this.name} is eating`)
+    }
+    sleep(){
+        console.log(`This ${this.name} is sleeping`)
+    }
+}
+
+class Rabbit extends Animal{
+    name = "rabbit"
+}
+
+class Fish extends Animal{
+    name = "fish"
+}
+
+class Hawk extends Animal{
+    name = "hawk"
+}
+
+const rabbit = new Rabbit()
+const fish = new Fish()
+const hawk = new Hawk()
+
+
+console.log(rabbit.alive)
+rabbit.eat()
+rabbit.sleep()
+
+console.log(fish.alive)
+fish.eat()
+fish.sleep()
+
+console.log(hawk.alive)
+hawk.eat()
+hawk.sleep()
+
+
