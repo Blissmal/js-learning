@@ -222,18 +222,18 @@ console.log(Username)
 //     }
 // }while(!loggedIn)
 
-for(let i = 0;i < 100;i++){
-    if(i%2 == 1){
+for (let i = 0; i < 100; i++) {
+    if (i % 2 == 1) {
         console.log(i)
     }
 }
 
-function add(x, y){
+function add(x, y) {
     let result = x + y
     return result
 }
 
-console.log(add(4,6))
+console.log(add(4, 6))
 
 const textBox = document.getElementById("textbox")
 const toFahrenheit = document.getElementById("toFahrenheit")
@@ -242,16 +242,16 @@ const result = document.getElementById("result")
 let temp
 
 
-function convert(){
-    if(toFahrenheit.checked){
+function convert() {
+    if (toFahrenheit.checked) {
         temp = Number(textBox.value)
         temp = temp * 9 / 5 + 32
         result.textContent = temp.toFixed(1) + "°F"
-    }else if(toCelsius.checked){
+    } else if (toCelsius.checked) {
         temp = Number(textBox.value)
         temp = (temp - 32) * (5 / 9)
         result.textContent = temp.toFixed(1) + "°C"
-    }else{
+    } else {
         result.textContent = `Select a unit`
     }
 }
@@ -264,16 +264,16 @@ console.log(numOfFruits)
 
 fruits.sort()
 
-for(i = 0;i < fruits.length;i++){
+for (i = 0; i < fruits.length; i++) {
     console.log(fruits[i])
 }
 
-let numbers = [1,2,3,4,5]
+let numbers = [1, 2, 3, 4, 5]
 let maximum = Math.max(...numbers)
 
 console.log(maximum)
 
-function openFridge(...foods){
+function openFridge(...foods) {
     console.log(...foods)
 }
 
@@ -282,9 +282,9 @@ const food2 = "hamburger"
 
 openFridge(food1, food2)
 
-function sum(...numbers){
+function sum(...numbers) {
     let result = 0
-    for(let number of numbers){
+    for (let number of numbers) {
         result += number
     }
     return result
@@ -293,24 +293,24 @@ function sum(...numbers){
 const total = sum(1, 3, 5, 6, 7)
 console.log(`Your total is ${total}`)
 
-function average(...numbers){
+function average(...numbers) {
     let result = 0
-    for(let number of numbers){
+    for (let number of numbers) {
         result += number
     }
     return result / numbers.length
 }
 
-console.log(`Your average is ${average(4,4,4,4)}`)
+console.log(`Your average is ${average(4, 4, 4, 4)}`)
 
-function combineString(...strings){
+function combineString(...strings) {
     return strings.join(" ")
 }
 
 const Name = combineString("Blissmal", "Dangerous", "Hacker")
 console.log(Name)
 
-function rollDice(){
+function rollDice() {
     const numOfDice = document.getElementById("numOfDice").value
     const diceResult = document.getElementById("diceResult")
     const diceImages = document.getElementById("diceImages")
@@ -318,7 +318,7 @@ function rollDice(){
     const values = []
     const images = []
 
-    for (let i = 0; i < numOfDice; i++){
+    for (let i = 0; i < numOfDice; i++) {
         const value = Math.floor(Math.random() * 6) + 1
         values.push(value)
         images.push(`<img src="dice_images/${value}.svg" alt="Dice ${value}">`)
@@ -328,3 +328,71 @@ function rollDice(){
     diceImages.innerHTML = images.join('')
 
 }
+
+function generatePassword(Length, includeLowerCase, includeUpperCase, includeNumbers, includeSymbols) {
+    const lowercasechars = "abcdefghijklmnopqrstuvwxyz"
+    const uppercasechars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    const numberchars = "0123456789"
+    const symbolchars = "!@#$%^&*()_+"
+
+    let allowedchars = ""
+    let password1 = ""
+
+    allowedchars += includeLowerCase ? lowercasechars : ""
+    allowedchars += includeUpperCase ? uppercasechars : ""
+    allowedchars += includeNumbers ? numberchars : ""
+    allowedchars += includeSymbols ? symbolchars : ""
+
+    console.log(allowedchars)
+
+    if (Length <= 0) {
+        return `(password length must be atleast one)`
+    }
+    if (allowedchars.length === 0) {
+        return `(Atleast one set of characters need to be selected)`
+    }
+    for (let i = 0; i < Length; i++) {
+        const randomIndex = Math.floor(Math.random() * allowedchars.length)
+        password1 += allowedchars[randomIndex]
+
+    }
+
+    return password1
+}
+
+const passwordLength = 12
+const includeLowerCase = true
+const includeUpperCase = true
+const includeNumbers = true
+const includeSymbols = true
+
+const password1 = generatePassword(passwordLength, includeLowerCase, includeUpperCase, includeNumbers, includeSymbols)
+
+console.log(`Generated password: ${password1}`)
+
+
+let Nums = [1, 2, 3, 4, 5]
+Nums.forEach(display)
+function display(element) {
+    console.log(element)
+}
+
+const numbers6 = [1, 2, 3, 4, 5]
+const squares = numbers6.map(function (element) {
+    return Math.pow(element, 2)
+})
+console.log(squares)
+
+
+
+// setTimeout(function(){
+//     console.log("Hello")
+// }, 3000)
+
+const hello = (name, age) => {
+    console.log(`Hello ${name}`)
+    console.log(`You are ${age} years old`)
+}
+hello("Bliss", 20)
+
+
