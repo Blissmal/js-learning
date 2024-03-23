@@ -401,7 +401,7 @@ const person = {
     age: 30,
     isEmployed: true,
     sayHello: function(){
-        console.log(`Hello i am ${person.firstname}`)
+        console.log(`Hello i am ${this.firstname}`) // also class name person.firstname works
     }
 }
 
