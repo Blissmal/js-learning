@@ -585,3 +585,8 @@ const Fruits = [
 console.log(Fruits[2].name)
 console.log(Fruits.sort((a, b) => a.calories - b.calories))
 
+const date = new Date()
+
+const year = date.getFullYear()
+
+console.log(year)
