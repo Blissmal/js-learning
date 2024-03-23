@@ -174,5 +174,23 @@ button:active{
 
 }
 #startBtn{
-    background-color: hsl(115, 100%, 25%);
+    background-color: hsl(115, 100%, 40%);
+}
+
+#startBtn:hover{
+    background-color: hsl(115, 100%, 30%);
+}
+#stopBtn{
+    background-color: hsl(7, 100%, 40%);
+}
+
+#stopBtn:hover{
+    background-color: hsl(7, 100%, 30%);
+}
+#ResetBtn{
+    background-color: hsl(214, 70%, 40%);
+}
+
+#ResetBtn:hover{
+    background-color: hsl(214, 70%, 30%);
 }
