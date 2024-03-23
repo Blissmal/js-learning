@@ -461,5 +461,9 @@ product2.displayProduct()
 const Total1 = product2.calculateTotal(salesTax)
 console.log(`Total price (with tax): $${Total1.toFixed(2)}`)
 
+class MathUtil{
+    static PI = 3.14159
+}
 
+console.log(MathUtil.PI)
 
