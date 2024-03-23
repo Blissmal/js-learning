@@ -395,4 +395,14 @@ const hello = (name, age) => {
 }
 hello("Bliss", 20)
 
+const person = {
+    firstname: "Blissmal",
+    lastName: "Maluti",
+    age: 30,
+    isEmployed: true,
+    sayHello: function(){
+        console.log(`Hello i am ${person.firstname}`)
+    }
+}
 
+console.log(person.sayHello())
