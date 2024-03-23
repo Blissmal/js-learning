@@ -400,21 +400,21 @@ const person = {
     lastName: "Maluti",
     age: 30,
     isEmployed: true,
-    sayHello: function(){
+    sayHello: function () {
         console.log(`Hello i am ${this.firstname}`) // also class name person.firstname works
     }
 }
 
 person.sayHello()
 
-function Car(make, model, year, color){
+function Car(make, model, year, color) {
     this.make = make,
-    this.model = model,
-    this.year = year,
-    this.color = color,
-    this.drive = () => {
-        console.log(`You drive the ${this.model}`)
-    } 
+        this.model = model,
+        this.year = year,
+        this.color = color,
+        this.drive = () => {
+            console.log(`You drive the ${this.model}`)
+        }
 }
 
 const car1 = new Car("Mercedes", "Benz", 2024, "Red")
@@ -433,17 +433,17 @@ console.log(car2.color)
 car1.drive()
 car2.drive()
 
-class Product{
-    constructor(name, price){
+class Product {
+    constructor(name, price) {
         this.name = name
         this.price = price
     }
 
-    displayProduct(){
+    displayProduct() {
         console.log(`Product: ${this.name}`)
         console.log(`Price: ${this.price.toFixed(2)}`)
     }
-    calculateTotal(salesTax){
+    calculateTotal(salesTax) {
         return this.price + (this.price * salesTax)
     }
 }
@@ -461,13 +461,13 @@ product2.displayProduct()
 const Total1 = product2.calculateTotal(salesTax)
 console.log(`Total price (with tax): $${Total1.toFixed(2)}`)
 
-class MathUtil{
+class MathUtil {
     static PI = 3.14159
-    static getDiameter(radius){
+    static getDiameter(radius) {
         return radius * 2
     }
 
-    static getCircumference(radius){
+    static getCircumference(radius) {
         return 2 * this.PI * radius
     }
 }
@@ -476,10 +476,10 @@ console.log(MathUtil.PI)
 console.log(`Diameter: ${MathUtil.getDiameter(10)}`)
 console.log(`The circumference is ${MathUtil.getCircumference(7)}`)
 
-class User{
+class User {
     static userCount = 0
 
-    constructor(username){
+    constructor(username) {
         this.username = username
         User.userCount++
     }
@@ -491,25 +491,25 @@ const user2 = new User("Bethuel")
 console.log(user2.username)
 console.log(`Total Number of users: ${User.userCount}`)
 
-class Animal{
+class Animal {
     alive = true
-    eat(){
+    eat() {
         console.log(`This ${this.name} is eating`)
     }
-    sleep(){
+    sleep() {
         console.log(`This ${this.name} is sleeping`)
     }
 }
 
-class Rabbit extends Animal{
+class Rabbit extends Animal {
     name = "rabbit"
 }
 
-class Fish extends Animal{
+class Fish extends Animal {
     name = "fish"
 }
 
-class Hawk extends Animal{
+class Hawk extends Animal {
     name = "hawk"
 }
 
@@ -531,33 +531,33 @@ hawk.eat()
 hawk.sleep()
 
 
-class Rectangle{
-    constructor(width, height){
+class Rectangle {
+    constructor(width, height) {
         this.width = width
         this.height = height
     }
-    set width(newWidth){
-       if (newWidth > 0){
-        this._width = newWidth
-       }else{
-        console.error("Width must be apositive number")
-       }
+    set width(newWidth) {
+        if (newWidth > 0) {
+            this._width = newWidth
+        } else {
+            console.error("Width must be apositive number")
+        }
     }
 
-    set height(newHeight){
-        if (newHeight > 0){
-         this._height = newHeight
-        }else{
-         console.error("height must be apositive number")
+    set height(newHeight) {
+        if (newHeight > 0) {
+            this._height = newHeight
+        } else {
+            console.error("height must be apositive number")
         }
-     }
+    }
 
-     get width(){
+    get width() {
         return this._width
-     }
-     get height(){
+    }
+    get height() {
         return this._height
-     }
+    }
 }
 
 const rectangle = new Rectangle(4, 5)
