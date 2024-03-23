@@ -466,13 +466,13 @@ class MathUtil{
     static getDiameter(radius){
         return radius * 2
     }
-    
+
     static getCircumference(radius){
         return 2 * this.PI * radius
     }
 }
 
 console.log(MathUtil.PI)
-console.log(MathUtil.getDiameter(10))
-console.log(MathUtil.getCircumference(7))
+console.log(`The diameter is ${MathUtil.getDiameter(10)}`)
+console.log(`The circumference is ${MathUtil.getCircumference(7)}`)
 
