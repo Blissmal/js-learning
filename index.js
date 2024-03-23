@@ -657,10 +657,11 @@ function stop() {
     }
 }
 function reset() {
-    let timer = null
-    let startTime = 0
-    let elapsedTime = 0
-    let isRuning = false
+    clearInterval(timer)
+    startTime = 0
+    elapsedTime = 0
+    isRuning = false
+    Display.textContent = `00:00:00:00`
 }
 function update() {
     const currentTime = Date.now()
