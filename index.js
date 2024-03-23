@@ -590,3 +590,13 @@ const date = new Date()
 const year = date.getFullYear()
 
 console.log(year)
+
+
+function outer(){
+    let message = "Hello"
+    function inner(){
+        console.log(message)
+    }
+    inner()
+}
+outer()
