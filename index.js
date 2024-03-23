@@ -633,3 +633,27 @@ function updateClock(){
 
 updateClock()
 setInterval(updateClock, 1000)
+
+const Display = document.getElementById("display")
+let timer = null
+let startTime = 0
+let elapsedTime = 0
+let isRuning = false
+
+function start(){
+   if(!isRuning){
+    startTime = Date.now() - elapsedTime
+    timer = setInterval(update, 10)
+   } 
+
+}
+
+function stop(){
+
+}
+function reset(){
+
+}
+function update(){
+
+}
