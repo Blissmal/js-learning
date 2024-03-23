@@ -476,3 +476,18 @@ console.log(MathUtil.PI)
 console.log(`Diameter: ${MathUtil.getDiameter(10)}`)
 console.log(`The circumference is ${MathUtil.getCircumference(7)}`)
 
+class User{
+    static userCount = 0
+
+    constructor(username){
+        this.username = username
+        User.userCount++
+    }
+}
+const user1 = new User("Blissmal")
+console.log(user1.username)
+console.log(User.userCount)
+
+const user2 = new User("Bethuel")
+console.log(user2.username)
+console.log(User.userCount)
