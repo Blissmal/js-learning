@@ -558,7 +558,7 @@ class Rectangle {
     get height() {
         return this._height
     }
-    get area(){
+    get area() {
         return this._height * this._width
     }
 }
@@ -577,9 +577,9 @@ console.log(a)
 console.log(b)
 
 const Fruits = [
-    {name: "apple", color: "red", calories: 95},
-    {name: "orange", color: "orange", calories: 45},
-    {name: "banana", color: "yellow", calories: 105}
+    { name: "apple", color: "red", calories: 95 },
+    { name: "orange", color: "orange", calories: 45 },
+    { name: "banana", color: "yellow", calories: 105 }
 ];
 
 console.log(Fruits[2].name)
@@ -592,26 +592,26 @@ const year = date.getFullYear()
 console.log(year)
 
 
-function outer(){
+function outer() {
     let message = "Hello"
-    function inner(){
+    function inner() {
         console.log(message)
     }
     inner()
 }
 outer()
 
-function createCounter(){
+function createCounter() {
     let count = 0
-    function increament(){
+    function increament() {
         count++
         console.log(`Count increased to ${count}`)
     }
 
-    function getCount(){
+    function getCount() {
         return count
     }
-    return {increament, getCount}
+    return { increament, getCount }
 }
 
 const counter = createCounter()
@@ -619,7 +619,7 @@ counter.increament()
 
 console.log(`The current count is ${counter.getCount()}`)
 
-function updateClock(){
+function updateClock() {
     const now = new Date()
     let hours = now.getHours().toString().padStart(2, 0)
     const meridiem = hours >= 12 ? "PM" : "AM"
@@ -640,22 +640,29 @@ let startTime = 0
 let elapsedTime = 0
 let isRuning = false
 
-function start(){
-   if(!isRuning){
-    startTime = Date.now() - elapsedTime
-    timer = setInterval(update, 10)
-    isRuning = true
-   } 
+function start() {
+    if (!isRuning) {
+        startTime = Date.now() - elapsedTime
+        timer = setInterval(update, 10)
+        isRuning = true
+    }
 
 }
 
-function stop(){
-
+function stop() {
+    if (isRuning) {
+        clearInterval(timer)
+        elapsedTime = Date.now() - startTime
+        isRuning = false
+    }
 }
-function reset(){
-
+function reset() {
+    let timer = null
+    let startTime = 0
+    let elapsedTime = 0
+    let isRuning = false
 }
-function update(){
+function update() {
     const currentTime = Date.now()
     elapsedTime = currentTime - startTime
     let hours = Math.floor(elapsedTime / (1000 * 60 * 60))
