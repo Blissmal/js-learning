@@ -618,3 +618,5 @@ const counter = createCounter()
 counter.increament()
 
 console.log(`The current count is ${counter.getCount()}`)
+
+

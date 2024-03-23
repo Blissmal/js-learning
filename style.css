@@ -115,3 +115,20 @@ button:active{
     width: 150px;
     margin: 5px;
 }
+
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(red, blue);
+    border-radius: 10px;
+}
+
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+
+}
