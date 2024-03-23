@@ -158,3 +158,21 @@ button:active{
     text-shadow: 2px, 2px, 2px hsla(0, 0%, 0%, 0.75);
     margin-bottom: 25px;
 }
+
+#controls{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+#startBtn{
+    background-color: hsl(115, 100%, 25%);
+}
