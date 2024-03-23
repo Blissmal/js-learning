@@ -564,6 +564,14 @@ class Rectangle {
 }
 
 const rectangle = new Rectangle(4, 5)
-console.log(`${rectangle.width} cm`)
-console.log(`${rectangle.height} cm`)
-console.log(`Area: ${rectangle.area} cm`)
+console.log(`${rectangle.width}cm`)
+console.log(`${rectangle.height}cm`)
+console.log(`Area: ${rectangle.area}cm`)
+
+let a = 1;
+let b = 2;
+
+[a, b] = [b, a]
+
+console.log(a)
+console.log(b)
