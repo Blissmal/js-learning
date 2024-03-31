@@ -204,7 +204,7 @@ button:active{
     max-width: 500px;
     overflow: hidden;
 }
-#display{
+#displayVal{
     width: 100%;
     padding: 20px;
     font-size: 5rem;
@@ -243,4 +243,7 @@ button:active{
 }
 .operator-btn:hover{
     background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
 }

@@ -678,3 +678,16 @@ function update() {
 
     Display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`
 }
+
+const displayVal = document.getElementById("displayVal");
+
+function appendToDisplay(input){
+    displayVal.value += input;
+}
+function clearDisplay(){
+
+}
+
+function calculate(){
+
+}
