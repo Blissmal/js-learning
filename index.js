@@ -714,3 +714,9 @@ for(let h4Element of h4Elements){
 for(let liElement of liElements){
     liElement.style.backgroundColor = "lightgreen"
 }
+
+const newH1 = document.createElement("h1")
+
+newH1.textContent = "I like pizza"
+
+document.body.append(newH1)
