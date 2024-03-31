@@ -695,3 +695,7 @@ function calculate(){
         displayVal.value = "error"
     }
 }
+
+const myHeading = document.getElementById("my-heading")
+myHeading.style.backgroundColor = "YELLOW"
+myHeading.style.textAlign = "center"
