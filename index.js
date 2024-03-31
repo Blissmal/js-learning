@@ -702,3 +702,15 @@ myHeading.style.textAlign = "center"
 
 const FRUITS = document.getElementsByClassName("fruits")
 console.log(FRUITS)
+
+const h4Elements = document.getElementsByTagName("h4")
+const liElements = document.getElementsByTagName("li")
+
+h4Elements[0].style.backgroundColor = "yellow"
+
+for(let h4Element of h4Elements){
+    h4Element.style.backgroundColor = "yellow"
+}
+for(let liElement of liElements){
+    liElement.style.backgroundColor = "lightgreen"
+}
