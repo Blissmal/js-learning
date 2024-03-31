@@ -685,9 +685,13 @@ function appendToDisplay(input){
     displayVal.value += input;
 }
 function clearDisplay(){
-
+    displayVal.value = ""
 }
 
 function calculate(){
-
+    try{
+        displayVal.value = eval(displayVal.value)
+    }catch(error){
+        displayVal.value = "error"
+    }
 }
