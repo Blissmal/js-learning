@@ -195,3 +195,18 @@ button:active{
 #ResetBtn:hover{
     background-color: hsl(214, 70%, 30%);
 }
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button{
+    width: 100px;
+    height: 100ox;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
