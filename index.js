@@ -699,3 +699,6 @@ function calculate(){
 const myHeading = document.getElementById("my-heading")
 myHeading.style.backgroundColor = "YELLOW"
 myHeading.style.textAlign = "center"
+
+const FRUITS = document.getElementsByClassName("fruits")
+console.log(FRUITS)
